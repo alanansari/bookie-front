@@ -33,7 +33,6 @@ function HomePage() {
       });
       setBooks(booksArr)
       setLoading(false)
-      console.log(booksArr)
     } catch (error) {
       console.error("Error fetching books:", error)
     }

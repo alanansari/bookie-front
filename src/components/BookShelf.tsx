@@ -24,7 +24,7 @@ const BookShelf = () => {
         <button className="bg-green-600 p-2 rounded-md absolute right-2 top-2 text-white" onClick={handleNavigate}>Home</button>
         <div className='p-4 flex flex-wrap justify-center'>
             {books.map((book:any) => (
-                <div key={book.uid} className="flex flex-col h-auto w-[20vw] p-4 m-2 border rounded-md">
+                <div key={book.uid} className="flex flex-col h-auto md:w-[20vw] w-[70vw] p-4 m-2 border rounded-md">
                     <div className="flex"><span className="font-bold">Book Title:</span> {book.title}</div>
                     <div className="flex mb-4"><span className="font-bold">Edition Count:</span> {book.edition_count}</div>
                     <button className='w-full bg-red-400 rounded-md p-1 text-white' onClick={()=>{handleRemove(book.uid)}}>Remove</button>
